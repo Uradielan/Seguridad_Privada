@@ -28,7 +28,7 @@ document.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const text = "Somos una empresa dedicada a la seguridad privada, con más de 25 años de experiencia en brindar soluciones de protección a nuestros clientes más exigentes.";
+    const text = "Somos una empresa dedicada a la seguridad privada, con más de 25 años de experiencia brindando soluciones de protección a nuestros clientes más exigentes.";
     let index = 0;
     const speed = 25;  // Velocidad del efecto de máquina de escribir
     const typingElement = document.getElementById('typewriter');
