@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad Privada</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+
+    <nav class="bg-white border-gray-200 md:fixed md:w-svw md:z-50 md:shadow-md">
+        <div class="nav-container max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 px-16">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/Logo.png" id="logo" alt="Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="nav-menu font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros-section">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <section id="inicio">
+        <div class="relative flex flex-col">
+            <div class="">
+                <img class="img-banner object-cover brightness-75 h-96" src="images/banner.png" alt="">
+            </div>
+            <div class="text-banner-container absolute my-4 md:top-44 md:left-12">
+                <h2 class="main-title-banner mx-8 font-bold text-white text-start">Seguridad Profesional a Su Servicio
+                </h2>
+                <p class="second-title-banner mx-8 text-start">25 años de experiencia asegurando a líderes
+                    empresariales, eventos de alto perfil y más.</p>
+                <button class="button-banner mx-8 p-3 shadow-lg text-start hover:scale-110 transition-all">
+                    <p class="font-semibold">Solicitar Consulta Gratis</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="nosotros-section">
+        <h2 class="slide-top text-center font-extrabold text-4xl py-8 pt-20">NOSOTROS</h2>
+        <h3 id="typewriter" class="w-800 text-start mx-8 text-xl md:mx-auto md:mb-12"></h3>
+        <div class="mt-8 md:hidden">
+            <div class="flex flex-col items-center">
+                <img src="images/Experiencia.png">
+                <h4 class="font-bold w-min text-center">Experiencia Confiable</h4>
+                <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
+                    <p class="font-semibold">25 años de experiencia en la Policía Federal Argentina, protegiendo a
+                        ministros y altos cargos del gobierno.</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/shield.png">
+                <h4 class="font-bold w-min text-center">Servicios Especializados</h4>
+                <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
+                    <p class="font-semibold">Custodias personales, chófer custodios, transporte de valores, protección
+                        de bienes, establecimientos y eventos.</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/rating.png">
+                <h4 class="font-bold w-min text-center">Clientes Destacados</h4>
+                <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
+                    <p class="font-semibold">Hemos trabajado con empresarios petroleros, laboratorios Bago, y varios
+                        eventos de artistas reconocidos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <div class="flex justify-between w-800 mx-auto">
+                <div id="logo1" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description1">
+                    <img src="images/Experiencia.png">
+                    <h4 class="font-bold w-min text-center md:text-xl">Experiencia Confiable</h4>
+                </div>
+                <div id="logo2" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description2">
+                    <img src="images/shield.png">
+                    <h4 class="font-bold w-min text-center md:text-xl">Servicios Especializados</h4>
+                </div>
+                <div id="logo3" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description3">
+                    <img src="images/rating.png">
+                    <h4 class="font-bold w-min text-center md:text-xl">Clientes Destacados</h4>
+                </div>
+            </div>
+        
+            <!-- Descripción con scroll horizontal -->
+            <div class="mt-12 mb-24 w-800 mx-auto description-container overflow-x-hidden">
+                <div class="description-wrapper flex transition-all duration-500">
+                    <div id="description1" class="description flex-none w-full py-3 border-y border-black">
+                        <p class="font-semibold w-800">25 años de experiencia en la Policía Federal Argentina, protegiendo a
+                            ministros y altos cargos del gobierno.</p>
+                    </div>
+                    <div id="description2" class="description flex-none w-full py-3 border-y border-black">
+                        <p class="font-semibold w-800">Custodias personales, chófer custodios, transporte de valores, protección
+                            de bienes, establecimientos y eventos.</p>
+                    </div>
+                    <div id="description3" class="description flex-none w-full py-3 border-y border-black">
+                        <p class="font-semibold w-800">Hemos trabajado con empresarios petroleros, laboratorios Bago, y varios
+                        eventos de artistas reconocidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div>
+                <img class="img-historia brightness-50" src="images/Historia.jpg" alt="">
+            </div>
+            <div class="flex flex-col md:flex-row absolute top-8 md:w-full md:justify-evenly">
+                <div class="mx-8 my-4 w-600">
+                    <h2 class="historia font-extrabold text-white text-xl md:text-4xl">Nuestra Historia</h2>
+                    <p class="text-white mt-3 md:text-2xl"> Con más de 25 años de experiencia en la
+                        Policía Federal Argentina, hemos brindado
+                        servicios de seguridad privada a figuras
+                        clave de la política y la industria. Nos
+                        enorgullece haber sido custodios de
+                        varios Ministros de la Nación, lo que nos
+                        ha permitido adquirir un conocimiento
+                        profundo y una experiencia inigualable en
+                        el campo de la seguridad.</p>
+                </div>
+                <div class="mx-8 my-4 w-600">
+                    <h2 class="valores font-extrabold text-white text-xl md:text-4xl">Nuestros Valores</h2>
+                    <ul>
+                        <li class="text-white list-disc mt-3 md:text-2xl"><b>Profesionalismo:</b> Nuestra dedicación al detalle y al
+                            cumplimiento de los más altos estándares nos distingue en la industria.</li>
+                        <li class="text-white list-disc my-2 md:text-2xl"><b>Confidencialidad:</b> Mantenemos la discreción y
+                            privacidad de nuestros clientes como una prioridad absoluta.</li>
+                        <li class="text-white list-disc my-2 md:text-2xl"><b>Compromiso:</b> Nos comprometemos a ofrecer un servicio
+                            de calidad que garantice la seguridad y tranquilidad de nuestros clientes.</li>
+                        <li class="text-white list-disc my-2 md:text-2xl"><b>Innovación:</b> Estamos en constante búsqueda de las
+                            últimas tecnologías y técnicas para mejorar nuestros servicios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="mb-24">
+        <h2 class="text-center font-extrabold text-2xl py-8">SERVICIOS</h2>
+        <div>
+            <div class="gallery">
+                <img class="servicios-img slide-right" src="images/prueba.jpg" alt="A Bear">
+                <img class="servicios-img slide-right" src="images/Chofer.png" alt="A Bear">
+                <img class="servicios-img slide-right" src="images/transporte.jpg" alt="A lioness">
+                <img class="servicios-img slide-right" src="images/proteccionbienes.jpg" alt="A Dog">
+                <img class="servicios-img slide-right" src="images/establecimientos.jpg" alt="A kind wolf">
+                <img class="servicios-img slide-right" src="images/Proteccion.jpg" alt="A Tiger">
+            </div>
+        </div>
+    </section>
+    <section id="contact-section" class="py-6 px-4">
+        <div class="md:flex md:gap-8">
+            <div class="contact-form my-4 py-4 px-8 md:w-2/5">
+                <h3 class="text-form text-center font-extrabold text-2xl py-6">CONTACTO</h3>
+                <div class="bordes mb-4"></div>
+                <div class="w-fit ml-2 mx-auto">
+                    <h4 class="text-form my-2">Luis Alberto Castiglione</h4>
+                    <div class="flex gap-2 my-2 items-center">
+                        <img class="w-8" src="images/wpp.png" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=5491139524635" class="text-form">+ 54 9 11-3952-4635</a>
+                    </div>
+                    <div class="flex gap-2 my-2 items-center">
+                        <img class="w-8" src="images/email.png" alt="">
+                        <a href="mailto:Luiscastiglione33@gmail.com" class="text-form">Luiscastiglione33@gmail.com</a>
+                    </div>
+                </div>
+                <div class="bordes mb-4"></div>
+                <div class="w-fit ml-2 mx-auto">
+                    <h4 class="text-form">Ariel Oribe</h4>
+                    <div class="flex gap-2 my-2 items-center">
+                        <img class="w-8" src="images/wpp.png" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=5491134194374" class="text-form">+54 9 11-3419-4374</a>
+                    </div>
+                </div>
+                <div class="bordes my-4"></div>
+            </div>
+            <div class="contact-form my-4 py-4 px-8 md:w-3/5">
+                <h2 class="text-form text-center font-extrabold text-2xl py-6">FORMULARIO</h2>
+                <div class="bordes mb-4"></div>
+                <form class="block" action="https://formsubmit.co/Luiscastiglione33@gmail.com" method="POST">
+                    <div class="border-b border-dashed">
+                        <input class="input-form block h-10 w-full bg-primary-300 bg-opacity-75 my-2 p-2"
+                            placeholder="Nombre" type="text" name="name" required>
+                    </div>
+                    <div class="border-b border-dashed">
+                        <input class="input-form block h-10 w-full bg-primary-300 bg-opacity-75 my-2 p-2"
+                            placeholder="Email" type="email" name="email" required>
+                    </div>
+                    <div class="border-b border-dashed">
+                        <input class="input-form block h-10 w-full bg-primary-300 bg-opacity-75 my-2 p-2"
+                            placeholder="Teléfono (optativo)" type="text" name="tel">
+                    </div>
+                    <div class="border-b border-dashed">
+                        <textarea class="input-form h-36 block h-10 w-full bg-primary-300 bg-opacity-75 my-2 p-2"
+                            placeholder="Mensaje" rows="10" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn mt-5 mx-auto w-full">
+                        <span class="btn-text form-button text-white px-8 py-2">ENVIAR</span>
+                        <span class="btn-back"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="px-4 pt-4 pb-12">
+        <div class="flex justify-between flex-col items-center gap-4">
+            <div>
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="images/Logo.png" class="w-16" alt="Logo" />
+                </a>
+            </div>
+            <!-- <div>
+                <h3 class="font-bold text-center mb-2">Nuestras redes</h3>
+                <div class="flex gap-8 md:ml-auto">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5491153130820"><img
+                            class="w-12 hover:scale-110 transition-all"
+                            src="   images/wpp.png " alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/uriel-rodriguez-lagorio/"><img
+                            class="w-12 hover:scale-110 transition-all"
+                            src="   https://cdn-icons-png.flaticon.com/512/3536/3536505.png " alt=""></a>
+                    <a target="_blank" href="https://github.com/Uradielan"><img
+                            class="w-12 hover:scale-110 transition-all invert"
+                            src="   https://cdn-icons-png.flaticon.com/512/2111/2111425.png " alt=""></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="flex justify-center">
+            <span>Copyright © 2024</span>
+        </div>
+        <div class="mt-2 border-t solid border-gray-500 md:flex md:justify-center">
+            <span class="text-sm tex">Web creada por Uriel Rodriguez - <a class="hover:underline"
+                    href="mailto:Ruriel51@gmail.com">Ruriel51@gmail.com</a></span>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
