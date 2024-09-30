@@ -17,7 +17,7 @@
 
     <nav class="bg-white border-gray-200 md:fixed md:w-svw md:z-50 md:shadow-md">
         <div class="nav-container max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 px-16">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="javascript:void(0)" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/Logo.png" id="logo" alt="Logo" />
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
@@ -60,18 +60,18 @@
                 </h2>
                 <p class="second-title-banner mx-8 text-start">25 años de experiencia asegurando a líderes
                     empresariales, eventos de alto perfil y más.</p>
-                <button class="button-banner mx-8 p-3 shadow-lg text-start hover:scale-110 transition-all">
-                    <p class="font-semibold">Solicitar Consulta Gratis</p>
-                </button>
+                <a href="#contact-section" class="block w-fit button-banner mx-8 p-3 shadow-lg text-start hover:scale-110 transition-all font-semibold">
+                    Solicitar Consulta Gratis
+                </a>
             </div>
         </div>
     </section>
     <section id="nosotros-section">
-        <h2 class="slide-top text-center font-extrabold text-4xl py-8 pt-20">NOSOTROS</h2>
+        <h2 class="slide-top animate-on-scroll text-center font-extrabold text-4xl py-8 pt-20">NOSOTROS</h2>
         <h3 id="typewriter" class="w-800 text-start mx-8 text-xl md:mx-auto md:mb-12"></h3>
         <div class="mt-8 md:hidden">
             <div class="flex flex-col items-center">
-                <img src="images/Experiencia.png">
+                <img src="images/Experiencia.png" alt="Experiencia">
                 <h4 class="font-bold w-min text-center">Experiencia Confiable</h4>
                 <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
                     <p class="font-semibold">25 años de experiencia en la Policía Federal Argentina, protegiendo a
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="flex flex-col items-center">
-                <img src="images/shield.png">
+                <img src="images/shield.png" alt="Servicios">
                 <h4 class="font-bold w-min text-center">Servicios Especializados</h4>
                 <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
                     <p class="font-semibold">Custodias personales, chófer custodios, transporte de valores, protección
@@ -87,27 +87,38 @@
                 </div>
             </div>
             <div class="flex flex-col items-center">
-                <img src="images/rating.png">
+                <img src="images/rating.png" alt="clientes destacados">
                 <h4 class="font-bold w-min text-center">Clientes Destacados</h4>
                 <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
                     <p class="font-semibold">Hemos trabajado con empresarios petroleros, laboratorios Bago, y varios
                         eventos de artistas reconocidos.</p>
                 </div>
             </div>
+            <div class="flex flex-col items-center">
+                <img src="images/certificate.png" alt="capacitación">
+                <h4 class="font-bold w-min text-center">Personal Capacitado</h4>
+                <div class="subtitulos-iconos border-y-2 mt-4 mb-10 mx-8 border-solid py-2">
+                    <p class="font-semibold">Contamos con la capacitación de nuestro personal en la idoneidad del uso de armas cortas y larga.</p>
+                </div>
+            </div>
         </div>
         <div class="hidden md:block">
             <div class="flex justify-between w-800 mx-auto">
-                <div id="logo1" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description1">
-                    <img src="images/Experiencia.png">
+                <div id="logo1" class="slide-left animate-on-scroll logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description1">
+                    <img src="images/Experiencia.png" alt="Experiencia">
                     <h4 class="font-bold w-min text-center md:text-xl">Experiencia Confiable</h4>
                 </div>
-                <div id="logo2" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description2">
-                    <img src="images/shield.png">
+                <div id="logo2" class="slide-left animate-on-scroll logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description2">
+                    <img src="images/shield.png" alt="Experiencia">
                     <h4 class="font-bold w-min text-center md:text-xl">Servicios Especializados</h4>
                 </div>
-                <div id="logo3" class="slide-left logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description3">
-                    <img src="images/rating.png">
+                <div id="logo3" class="slide-left animate-on-scroll logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description3">
+                    <img src="images/rating.png" alt="Experiencia">
                     <h4 class="font-bold w-min text-center md:text-xl">Clientes Destacados</h4>
+                </div>
+                <div id="logo3" class="slide-left animate-on-scroll logo flex flex-col items-center cursor-pointer hover:scale-110 transition-all" data-target="description4">
+                    <img src="images/certificate.png" alt="Experiencia">
+                    <h4 class="font-bold w-min text-center md:text-xl">Personal Capacitado</h4>
                 </div>
             </div>
         
@@ -126,16 +137,19 @@
                         <p class="font-semibold w-800">Hemos trabajado con empresarios petroleros, laboratorios Bago, y varios
                         eventos de artistas reconocidos.</p>
                     </div>
+                    <div id="description4" class="description flex-none w-full py-3 border-y border-black">
+                        <p class="font-semibold w-800">Contamos con la capacitación de nuestro personal en la idoneidad del uso de armas cortas y larga.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="relative">
+        <div class="relative historia-bg" style="background-image: url('images/Historia.jpg');">
             <div>
                 <img class="img-historia brightness-50" src="images/Historia.jpg" alt="">
             </div>
             <div class="flex flex-col md:flex-row absolute top-8 md:w-full md:justify-evenly">
                 <div class="mx-8 my-4 w-600">
-                    <h2 class="historia font-extrabold text-white text-xl md:text-4xl">Nuestra Historia</h2>
+                    <h2 class="fade-right animate-on-scroll font-extrabold text-white text-xl md:text-4xl">Nuestra Historia</h2>
                     <p class="text-white mt-3 md:text-2xl"> Con más de 25 años de experiencia en la
                         Policía Federal Argentina, hemos brindado
                         servicios de seguridad privada a figuras
@@ -147,7 +161,7 @@
                         el campo de la seguridad.</p>
                 </div>
                 <div class="mx-8 my-4 w-600">
-                    <h2 class="valores font-extrabold text-white text-xl md:text-4xl">Nuestros Valores</h2>
+                    <h2 class="fade-right animate-on-scroll font-extrabold text-white text-xl md:text-4xl">Nuestros Valores</h2>
                     <ul>
                         <li class="text-white list-disc mt-3 md:text-2xl"><b>Profesionalismo:</b> Nuestra dedicación al detalle y al
                             cumplimiento de los más altos estándares nos distingue en la industria.</li>
@@ -166,12 +180,13 @@
         <h2 class="text-center font-extrabold text-2xl py-8">SERVICIOS</h2>
         <div>
             <div class="gallery">
-                <img class="servicios-img slide-right" src="images/prueba.jpg" alt="A Bear">
-                <img class="servicios-img slide-right" src="images/Chofer.png" alt="A Bear">
-                <img class="servicios-img slide-right" src="images/transporte.jpg" alt="A lioness">
-                <img class="servicios-img slide-right" src="images/proteccionbienes.jpg" alt="A Dog">
-                <img class="servicios-img slide-right" src="images/establecimientos.jpg" alt="A kind wolf">
-                <img class="servicios-img slide-right" src="images/Proteccion.jpg" alt="A Tiger">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/prueba.jpg" alt="A Bear">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/Chofer (2).png" alt="A Bear">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/Peritos.png" alt="A Bear">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/transporte.jpg" alt="A lioness">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/proteccionbienes.jpg" alt="A Dog">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/establecimientos.jpg" alt="A kind wolf">
+                <img class="servicios-img slide-right animate-on-scroll" src="images/Proteccion.jpg" alt="A Tiger">
             </div>
         </div>
     </section>

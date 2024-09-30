@@ -1,4 +1,4 @@
-// script.js
+
 document.querySelectorAll('.logo').forEach(logo => {
     logo.addEventListener('click', function () {
         const targetId = this.getAttribute('data-target');
@@ -12,21 +12,7 @@ document.querySelectorAll('.logo').forEach(logo => {
     });
 });
 
-document.addEventListener('scroll', function() {
-    var historia = document.querySelector('.historia');
-    var valores = document.querySelector('.valores');
-    var historiaPosition = historia.getBoundingClientRect().top;
-    var valoresPosition = valores.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight;
-
-    if (historiaPosition < screenPosition) {
-        historia.style.visibility = 'visible';
-    }
-    if (valoresPosition < screenPosition) {
-        valores.style.visibility = 'visible';
-    }
-});
-
+// Efecto maquina de escribir
 document.addEventListener("DOMContentLoaded", function() {
     const text = "Somos una empresa dedicada a la seguridad privada, con más de 25 años de experiencia brindando soluciones de protección a nuestros clientes más exigentes.";
     let index = 0;
@@ -45,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// 
+// Para el navbar
 setTimeout(() => {
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -67,3 +53,22 @@ setTimeout(() => {
         });
     });
 }, 1500);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // Añade la clase que activa la animación
+                observer.unobserve(entry.target); // Deja de observar el elemento una vez que la animación comienza
+            }
+        });
+    }, {
+        threshold: 0.1 // Ajusta el umbral para definir cuánto del elemento debe ser visible antes de activar la animación
+    });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
